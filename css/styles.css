@@ -121,6 +121,8 @@ p {
 }
 
 .header-contacts-link {
+  display: flex;
+  align-items: center;
   color: var(--secondary-text-color);
 
   font-weight: 500;
@@ -131,6 +133,43 @@ p {
 .header-contacts-link:hover,
 .header-contacts-link:focus {
   color: var(--accent);
+}
+
+/* .header-contacts-item .mail::before {
+  display: inline-block;
+  content: '';
+  height: 12px;
+  width: 16px;
+  background-image: url(../img/envelope.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+.header-contacts-item .tel::before {
+  display: inline-block;
+  content: '';
+  height: 16px;
+  width: 10px;
+  background-image: url(../img/smartphone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+} */
+.mail {
+  display: flex;
+  align-items: center;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+}
+.tel {
+  display: flex;
+  align-items: center;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
 }
 .hero {
   max-width: 1600px;
@@ -538,7 +577,7 @@ p {
 .icon-company {
   width: 106px;
   height: 60px;
-
+  object-fit: fill;
   fill: var(--icon);
 }
 /* .i-c-1 {
@@ -548,4 +587,30 @@ p {
 .clients-item:hover .icon-company,
 .clients-item:focus .icon-company {
   fill: var(--accent);
+}
+.footer .container {
+  display: flex;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.footer-sn {
+  margin-left: 70px;
+  margin-top: 12px;
+  width: 206px;
+}
+.footer .sn-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.footer .icon-sn {
+  fill: var(--primary-bg-color);
 }
