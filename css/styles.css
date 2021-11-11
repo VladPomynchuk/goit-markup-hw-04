@@ -163,6 +163,10 @@ p {
   margin-right: 10px;
   fill: var(--secondary-text-color);
 }
+.header-contacts-link:hover .mail,
+.header-contacts-link:focus .mail {
+  fill: var(--accent);
+}
 .tel {
   display: flex;
   align-items: center;
@@ -170,6 +174,10 @@ p {
   height: 16px;
   margin-right: 10px;
   fill: var(--secondary-text-color);
+}
+.header-contacts-link:hover .tel,
+.header-contacts-link:focus .tel {
+  fill: var(--accent);
 }
 .hero {
   max-width: 1600px;
